@@ -27,7 +27,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -35,8 +34,18 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: rgba(224, 221, 15, 0.87);
+  text-shadow: 0 0 5px white;
+  margin-bottom: 20px;
 }
-
+h3 {
+  color: rgba(224, 221, 15, 0.87);
+  font-size: 1em;
+  line-height: 1.1;
+}
+h4 {
+  font-weight: bold;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -55,7 +64,9 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.resultContainer {
+  border: 1px solid gray;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
